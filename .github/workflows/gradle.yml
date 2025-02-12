@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Gradle Wrapper
-      run: sudo /home/runner/work/micronaut-crud/micronaut-crud/gradlew.bat build
+      run: ./gradlew build
 
     - name: Testing build
-      run: sudo /home/runner/work/micronaut-crud/micronaut-crud/gradlew.bat test
+      run: ./gradlew test
