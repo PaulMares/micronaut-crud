@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Gradle Wrapper
-      run: ./gradlew.bat build
+      run: sudo ./gradlew.bat build
 
     - name: Testing build
-      run: ./gradlew.bat test
+      run: sudo ./gradlew.bat test
