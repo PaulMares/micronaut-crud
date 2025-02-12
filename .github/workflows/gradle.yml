@@ -42,3 +42,7 @@ jobs:
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build --scan
+
+    - name: Test
+      if: always()
+      run: cat /home/runner/work/micronaut-crud/micronaut-crud/build/reports/tests/test/index.html
