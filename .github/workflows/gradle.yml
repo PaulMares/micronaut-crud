@@ -35,6 +35,12 @@ jobs:
     # - name: Create Gradle Wrapper
     #   run: gradle wrapper
 
+    - name: Test yet again
+      run: pwd
+
+    - name: Test a second time
+      run: ls
+
     - name: Build with Gradle Wrapper
       run: /home/runner/work/micronaut-crud/micronaut-crud/gradlew build
 
