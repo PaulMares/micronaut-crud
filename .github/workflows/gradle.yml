@@ -8,13 +8,12 @@
 name: Java CI with Gradle
 
 on:
-  push:
-    branches: [ "jdbc" ]
-  pull_request:
-    branches: [ "jdbc" ]
+  pull_request_review:
+    types: [submitted]
 
 jobs:
-  setup:
+  build:
+    if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     permissions:
       contents: write
